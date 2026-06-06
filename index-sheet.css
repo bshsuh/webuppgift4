@@ -1,0 +1,63 @@
+#latest-guide * {
+    background: transparent;
+}
+
+#latest-guide {
+    margin-left: 15%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 700px;
+    background: rgb(107, 0, 0);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#latest-guide h2 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.guide-entry {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+main > * *{
+    background: transparent;
+}
+main > * {
+    background: rgb(107, 0, 0);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+main h2 {
+    padding: 0;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+main > div {
+    text-align: center;
+    align-content: center;
+}
+
+article, main {
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 700px) {
+    #latest-guide {
+        margin: auto;
+        width: 70%;
+    }
+}

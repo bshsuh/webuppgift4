@@ -1,0 +1,85 @@
+*:not(nav *, .h-row, .tooltip, .overlay, .overlay-box) {
+    background: transparent !important;
+}
+
+body:not(nav, .h-row, .tooltip) {
+    background: linear-gradient(#000000, #010436) !important;
+}
+
+main {
+    margin-left: 5px;
+}
+
+.tables {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.table {
+    border: 1px solid whitesmoke;
+    width: 30%;
+    max-height: fit-content;
+}
+
+.row {
+    /* The table itself have establish the rest of the borders  */
+    border-top: 1px solid whitesmoke;
+    padding: 0.75rem;
+    position: relative; /* relative position for the tooltip */
+    cursor: pointer;
+}
+
+.row:first-child {
+    border-top: none;
+}
+
+.h-row {
+   background-color: rgb(8, 0, 63);
+   font-weight: bold;
+}
+
+/* text pops up under the relative row */
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #2b3241;
+    z-index: 10;
+}
+
+.row:hover .tooltip {
+    display: block;
+}
+
+/* Overlay blur */
+.overlay {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+}
+
+.overlay-box {
+    background: #fff;
+    padding: 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+}
+
+@media (max-width: 700px) {
+    .tables {
+        flex-direction: column;
+    }
+    .table {
+        width: 90%;
+    }
+}

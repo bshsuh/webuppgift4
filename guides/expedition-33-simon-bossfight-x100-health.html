@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon bossfight</title>
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../global-sheet.css">
+    <link rel="stylesheet" href="guide-sheets/expedition-33.css">
+    <meta name="depth" content="1">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='../guide-board.html'">Guide Board</button>
+        <div id="searchbar-slot">
+            <input type="search" id="search-navbar" placeholder="Search pages">
+            <ul id="nav-search-results"></ul>
+        </div>
+    </nav>
+    <header id= "challange-section">
+        <div id= "challange-description">
+            <h2> Challange Description </h2>
+            <div> Beat Simon with x100 health multiplier.</div>
+        </div>
+        <div id= "challange-modifiers">
+            <h2> Extra Modifers</h2>
+            <div>
+                <ul>
+                    <li>
+                        No play twice per turn Pictos (Faster Than Strong, Cheater)                            
+                    </li>
+                    <li>
+                        No full break bar on death Picto (Breaking Death)
+                    </li>
+                    <li>
+                        No dodging
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main id= "guide-script">
+        <h1>Guide Descrption</h1>
+        <div>
+            <p>Important details you need to know to understand this guide:</p>
+            <ul> 
+                <li><b>Monoco's third Gradient attack:</b> your entier build and skill usage revolves around Monoco's stunning Gradient Attack </li>
+                <li><b>Speed attribute:</b> your equipped pictos and stats should have speed as a priority</li>
+                <li><strong>Skip phase 3 with Sciel's Burst damage:</strong> keep accumilating sun or moon charges and use it all when he is around half hp</li>
+                <li><b>Sufficient AP gain:</b> No more AP gain from parrying, you need to rely on certain skills, Luminas and weapon passives to gain as much AP as possible (healing skills are great for this)</li>
+                <li><b>Gradient Charge gain:</b> maximize the gained charge per turn with certain Luminas and spent AP</li>
+                <li>Once all the previous points are accounted for, start considering appropriate skills and Luminas to whittle Simon's hp down to 50%</li>
+            </ul>
+            <p> Tables below list weapons, Pictos and Luminas that are relevent to the points made above (tap row for more info) </p>
+        </div>
+
+        <div class= "tables">
+            <div class="table">
+                <div class="row h-row">Lune's Equipment</div>
+                <div class="row">Trebuchim (Weapon)<div class="tooltip">Stain generation on Aim Shot to use desired abilities every turn</div></div>
+                <div class="row">Energising Turn<div class="tooltip">Lv 31, +1277 Speed</div></div>
+                <div class="row">Stay Marked<div class="tooltip">Lv28, +675 Speed, +22% Crit Rate</div></div>
+                <div class="row">Rush on Powerful<div class="tooltip">Lv31, +639 Speed, +35% Crit Rate</div></div>
+                <div class="row h-row">Sciel's Equipment</div>
+                <div class="row">Martenon (Weapon)<div class="tooltip">Double sun/moon charge generation. Initial passive damage and Foretell application in Twilight based on accumulated charges</div></div>
+                <div class="row">Perilous Parry<div class="tooltip">Lv 29, +586 Speed, +33% Cri Rate</div></div>
+                <div class="row">Shortcut<div class="tooltip">Lv 31, +672 Speed, +36% Crit Rate</div></div>
+                <div class="row">Empowering Parry<div class="tooltip">Lv 28, +546 Speed, +32% Crit Rate</div></div>
+                <div class="row h-row">Monoco's Equipment</div>
+                <div class="row">Sidaro (Weapon)<div class="tooltip">On using upgraded skills, allies gain AP and damage increases per use</div></div>
+                <div class="row">Powerful Mark<div class="tooltip">Lv 28, +819 Speed, +16% Crit Rate</div></div>
+                <div class="row">Energising Shots<div class="tooltip">Lv 28, +779 Speed, +16% Crit Rate</div></div>
+                <div class="row">Quick Break<div class="tooltip">Lv 31, +672 Speed, +36% Crit Rate</div></div>
+            </div>
+
+            <div class="table">
+                <div class="row h-row">AP Accumination<div class="tooltip">Luminas for AP gain. Lune's skill "Typhoon" utilizes the following passives greatly</div></div>
+                <div class="row">Protecting Heal<div class="tooltip">Healing an ally also applies Shell for 1 turn</div></div>
+                <div class="row">Powerful on Shell<div class="tooltip">Apply Powerful on applying Shell</div></div>
+                <div class="row">Rush on Powerful<div class="tooltip">Apply Rush on applying Powerful</div></div>
+                <div class="row">Auto Shell<div class="tooltip">Apply Shell on battle start</div></div>
+                <div class="row">Benificial Contamination<div class="tooltip">+2 AP on applying a status effect</div></div>
+                <div class="row">Energising Heal<div class="tooltip">Give 2 AP on healing an ally</div></div>
+                <div class="row">Energising Powerful<div class="tooltip">Give 2 AP on applying Powerful</div></div>
+                <div class="row">Energising Rush<div class="tooltip">Give 2 AP on applying Rush</div></div>
+                <div class="row">Rewarding Mark<div class="tooltip">+2 AP on hitting a marked target</div></div>
+                <div class="row">Energy Master<div class="tooltip">Every AP gain is increased by 1</div></div>
+            </div>
+
+            <div class="table">
+                <div class="row h-row">Gradient Attacks Charge Boosting<div class="tooltip">Luminas that increase Gradient charge rate</div></div>
+                <div class="row">Charging Alteration<div class="tooltip">Gain Gradient Charge on applying a buff</div></div>
+                <div class="row">Charging Burn<div class="tooltip">Gain Gradient Charge on applying Burn</div></div>
+                <div class="row">Charging Critical<div class="tooltip">Gain Gradient Charge on critical hit</div></div>
+                <div class="row">Charging Stun<div class="tooltip">Gain Gradient Charge on hitting a stunned enemy</div></div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="overlay-box" id="overlay-box"></div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div id="by">
+        <p><i>&copy;Bshr Suheil</i></p>
+        </div>
+    </footer>
+    <script type="module" src="../search-navbar.js"></script>
+    <script src="guide-scripts/simon-x100-hp.js"></script>
+</body>
+</html>

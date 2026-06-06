@@ -1,0 +1,87 @@
+.side-content {
+    display: flex;
+    justify-content: space-around;
+}
+.side-content > * {
+    flex: 1;
+}
+
+main {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.guide-entry {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid white;
+    gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: none;
+}
+
+
+.guide-entry:last-child {
+    border-bottom: 1px solid white;
+}
+
+.upcoming-guide-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.upcoming-guide-entry * {
+    text-decoration: none; 
+}
+
+@media (max-width: 1450px) {
+    .side-content {
+        flex-direction: column;
+
+    }
+    .upcoming-guide-entry {
+        border: none;
+        padding-left: 2px;
+    }
+}
+
+
+/* ---------------------------- Font sizes ------------------------- */
+
+html {
+    font-size: 17px;
+}
+
+.about, .guide-description {
+    font-size: 1.2rem;
+}
+
+.guide-title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 12px;
+    }
+}
+
+

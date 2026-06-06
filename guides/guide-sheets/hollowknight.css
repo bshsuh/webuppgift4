@@ -1,0 +1,94 @@
+/*html:not(nav), html *:not(nav *)  {background: transparent;}*/
+nav, footer{
+    margin: 0;
+    background: black;
+    padding: 20px 0px;
+}
+
+.header-wrap{
+    padding: 0;
+}
+.header-wrap *, main, footer span {
+    background: black;
+}
+.header-breaker {
+    padding: 0;
+    margin: 0;
+}
+/* Excluded text style elements to prevent them from getting their own padding */
+main *:not(b,i,em,strong), .main-container *:not(b,i,em,strong) {
+    margin: 0;
+    padding: 20px 5px;
+}
+
+b,i,em,strong {
+    background: transparent;
+}
+
+main h1, h3, #guide-description {
+    background: black;
+}
+
+.main-container {
+    padding: 0;
+    margin: 0;
+}
+
+.part-one {
+    background: linear-gradient(#000000,#290000);
+}
+.part-two {
+    background: linear-gradient(#290000, #291b00)
+}
+.part-three {
+    background: linear-gradient(#291b00, #11111e)
+}
+.part-four {
+    background: linear-gradient(#11111e, #272727)  
+}
+.part-five {
+    background: linear-gradient(#272727, #000000)  
+}
+
+#build, #build *{
+    background: black;
+}
+
+#build h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#build div:has(img) {
+    display: flex;
+    justify-content: center;
+}
+
+#build div img {
+    width: 80%;
+}
+#build ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+}
+
+#build li {
+    flex: 1;
+    margin-left: 30px;
+    padding: 0;
+    list-style-type: circle;
+}
+
+.slight-blue {
+    color: rgb(233, 244, 255);
+}
+
+.slight-red {
+    color: rgb(255, 232, 232);
+}
+
+.slight-yellow {
+    color: rgb(255, 254, 235);
+}
+

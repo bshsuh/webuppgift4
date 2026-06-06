@@ -1,0 +1,175 @@
+html:not(nav), html *:not(nav *), #by, #by * {
+    background: rgb(62, 29, 0);
+}
+nav {
+    margin: 0;
+    background: black !important;
+    padding: 20px 0px;
+}
+
+.header-wrap{
+    padding: 0;
+}
+.header-wrap * {
+    background: black;
+}
+.header-breaker {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+main {
+    margin-left: 5px;
+}
+
+.main-container {
+    display: flex;
+    gap: 15%;
+    padding: 1rem;
+    align-items: flex-start; /* prevent row's height stretching */
+}
+
+.table-container {
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column; 
+    max-width: 23%;
+    gap: 1.5rem;
+}
+
+.subtitle {
+    border: 1.2rem solid black;
+}
+
+.subtitle, .subtitle * {
+    background-color: black;
+}
+.campaign-table {
+    border-collapse: collapse; /* build table borders as a one connected line*/
+    border: 5px solid white;
+}
+
+.campaign-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.campaign-table tr.selected td, .campaign-table tr.selected td * {
+    /* change the background color of the selected row */
+    background: black;
+    pointer-events: none; /* make selected row unpressable */
+}
+
+/* Image box */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    border: 8px solid black;
+    background: black;
+    width: 50%;
+}
+
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    cursor: pointer;
+    border: 5px solid white;
+    box-sizing: border-box; /* fit the wrapper within the container border's neatly*/
+}
+
+/* Alt text in case window is too small. Hidden by default */
+.alt-fallback {
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px;
+    background: black;
+}
+
+/* SLIDER CONTROLS */
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /*space between the slider and the buttons*/ 
+    margin: 1rem;
+    background: black;
+    width: auto;
+}
+
+.slider-controls button {
+    cursor: pointer;
+    aspect-ratio: 1; /* Keep buttons square */
+    background: white;
+}
+
+#image-slider {
+    accent-color: white;
+    flex: 1; /* Slider will grow or shrink to fill space */
+    min-width: 50px; /* Minimum slider width */
+}
+
+.map-container .subtitle {
+    display: none;
+}
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    inset: 0; /* stretch overlay to cover entire screen */
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7); /* semi-transparent dark background */
+    backdrop-filter: blur(5px); /* blur everything behind the overlay */
+}
+
+/* Prevent image from overflowing*/
+.overlay img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+/* Toggle subtitle's location depending on window size */
+@media (max-width: 900px) {
+    .table-container .subtitle {
+        display: none;
+    }
+    .map-container .subtitle {
+        display: block;
+    }
+}
+
+
+@media (max-width: 675px) {
+    #image-slider {
+        display: none;
+    }
+}
+
+/* center table, widgets and subtitles to the center replace the map with its alt text*/
+@media (max-width: 500px) {
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-container > * {
+        width: 100%;
+        align-items: center;
+    }
+    .table-container {
+        max-width: 100%;
+    }
+    .image-wrapper img {
+        display: none;
+    }
+
+    .alt-fallback {
+        display: block;
+    }
+
+}

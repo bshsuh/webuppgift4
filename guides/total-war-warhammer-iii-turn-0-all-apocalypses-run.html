@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Crisis Turn 0</title>
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../global-sheet.css">
+    <link rel="stylesheet" href="guide-sheets/total-war.css">
+    <meta name="depth" content="1">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='../guide-board.html'">Guide Board</button>
+        <div id="searchbar-slot">
+            <input type="search" id="search-navbar" placeholder="Search pages">
+            <ul id="nav-search-results"></ul>
+        </div>
+    </nav>
+    <div class= "header-wrap">
+    <header id= "challange-section">
+        <div id= "challange-description">
+            <h2> Challange Description </h2>
+            <div> Enable all endgame scenarios on max difficulty and as soon as possible (turn range 10-20 with no warning)</div>
+        </div>
+        <div id= "challange-modifiers">
+            <h2> Extra Modifers</h2>
+            <div>
+                <ul>
+                    <li>
+                        Max difficulty and stats modifers for campaign, battles and AI stats modifer                         
+                    </li>
+                    <li>
+                        Non-crisis factions do not consalidate against the crisis factions
+                    </li>
+                    <li>
+                        Iron-man mode
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    </div>
+    <hr class= "header-breaker">
+    <main id= "guide-script">
+        <h1>Guide Description</h1>
+        <div>
+            <p>
+                This guide will focus on campaign pathing suggestions for certian factions using the table of images below.
+            </p>
+            <div id="image-table-explaination">
+                <!-- Validator comment on the skipping of h2 is ignored 
+                 since I use h levels based on context importance-->
+                <h3>About The Table </h3> 
+                Selecting one of the factions will display the corrisponding routes and description. 
+                Use the slider or the arrows to cycle between the campaign routes.
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="table-container">
+                <table class="campaign-table">
+                    <!-- "data-series" attribute is used as a key to get the proper image set, alt-text and image subtitles -->
+                    <tr data-series="a" class="selected"> <!-- Default selected row on page load-->
+                        <td><i><b>Warriors of Chaos:</b><br> Shadow Legion</i></td>
+                    </tr> 
+                    <tr data-series="b">
+                        <td><i><b>Tzeentch:</b><br> Oracles of Tzeentch</i></td>
+                    </tr>
+                    <tr data-series="c">
+                        <td><i><b>High Elves:</b><br> Eataine</i></td>
+                    </tr>
+                    <tr data-series="d">
+                        <td><i><b>Wood Elves:</b><br> Heralds of Ariel</i></td>
+                    </tr>
+                    <tr data-series="e">
+                        <td><i><b>Vampire Coast:</b><br> The DreadFleet</i></td>
+                    </tr>
+                </table>
+                <div class="subtitle"></div>
+            </div>
+            <div class="map-container">
+                <div class="image-wrapper">
+                    <span class="alt-fallback"></span>
+                    <img id="current-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Screenshot of campagin map"> 
+                </div>
+
+                <div class="slider-controls">
+                    <button id="previous-button">&#9664;</button>
+                    <!--slider's max and value is updated dynamically in script -->
+                    <input type="range" id="image-slider" min="1" max="1" value="1">
+                    <button id="next-button">&#9654;</button>
+                </div>
+                <div class= "subtitle"></div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <img id="overlay-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Screenshot of campagin map"> 
+        </div>            
+    </main>
+    <footer>
+        <hr>
+        <div id="by">
+        <p>All images used in this page are in-game screenshots of the game made by<i>&copy;Creative Assemply.</i></p>
+        <p><i>&copy;Bshr Suheil</i></p>
+        </div>
+    </footer>
+    <script type="module" src="../search-navbar.js"></script>
+    <script type="module" src="guide-scripts/ultimate-crisis.js"></script>
+</body>
+</html>

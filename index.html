@@ -1,0 +1,95 @@
+<!-- Main HTML document for About Me page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomer's Challanges and Guides</title>
+    <!--Website icon-->
+    <link rel="icon" type="image/png" href="images/favicon.ico"> 
+    <link rel="stylesheet" href="global-sheet.css">
+    <link rel="stylesheet" href="index-sheet.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <button class= "currentpage" onclick="location.href='index.html'">Home</button> <!-- Classified button for focus effects -->
+        <button onclick="location.href='guide-board.html'">Guide Board</button>
+        <div id="searchbar-slot">
+            <input type="search" id="search-navbar" placeholder="Search pages">
+            <ul id="nav-search-results"></ul>
+        </div>
+    </nav>
+    <article id="latest-guide">
+        <h2>
+            Latest Guide
+        </h2>
+        <div class= "guide-entry">
+            <div class= "game-name"> 
+                Hollow Knight: SilkSong
+            </div>
+            <div class= "guide-title">
+                <a href="guides/hollowknight-silksong-steel-heart-mode.html">
+                    SilkSong Steel Heart mode
+                </a>
+            </div>
+            <div class= "guide-description">
+                Beat the hardcore mode that unlocks after completing the game.
+            </div>
+        </div>
+    </article>
+    <main id="about">
+        <section>
+            <h2> About This Website </h2>
+            <div>
+                This website is dedicated to video game challenges and guides, 
+                Each challange has its own webpage along with a guide about how to achieve it.
+                The aim of this website is it be samll encyclopedia of game challanges and their guides.
+            </div>
+        </section>
+        <div>
+            You can leave your feedback in the forum below
+        </div>
+    </main>
+    <!-- Footer with mailtoform -->
+    <footer>
+        <form id = "mailtoform" action="mailto:MyRealEmail@gmail.com" method="post" enctype="text/plain" novalidate>
+            <h2 style= "margin-bottom: 0px">Feel free to reach out</h2>
+            <div class="inline-labels">
+                <label> Name
+                    <input type="text" id= "name" name="name" autocomplete="off" required>
+                </label>
+                <label> Email 
+                    <input type="email" id= "email" name="email" autocomplete="off" required> 
+                </label>
+            </div>
+            <label class="sized-label"> Subject 
+                <select id= "subject" name="subject">
+                    <option value="challangeRequest">Challange Request</option>
+                    <option value="guideRequest">Guide Request</option>
+                    <option value="qualityOfLifeRequest">Quality of Life Request</option>
+                </select>
+            </label>
+            <label> Message
+                <textarea id= "message" name="message" rows="4" required></textarea>
+                <!-- Validator ignored in this instance to maintain uniform element usage p for messages in script file-->
+                <p id= "message-counter"> 0/20 characters</p> 
+            </label>
+            <div class ="inline-buttons">
+                <button class= "inline-button" id="submit" type="submit">Send</button>
+                <button class= "inline-button" id="reset-button" type="reset">Clear</button>
+            </div>
+            <div class= "submission-notices">
+                <p hidden id= "valid-submission-message">
+                    Thank you! I will get back to you soon</p>
+                <p hidden id= "invalid-submission-message">
+                    Resolve field issues before submitting</p>
+            </div>
+        </form>
+        <p style="text-align: right; margin-right: 10px;">&copy;Bshr Suheil</p>
+    </footer>
+    <script src="contactform.js"></script>
+    <script type="module" src="search-navbar.js"></script>
+</body>
+
+</html>

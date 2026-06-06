@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Board</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="global-sheet.css">
+    <link rel="stylesheet" href="guide-board.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button class= "currentpage" onclick="location.href='guide-board.html'">Guide Board</button>
+        <div id="searchbar-slot">
+            <input type="search" id="search-navbar" placeholder="Search pages">
+            <ul id="nav-search-results"></ul>
+        </div>
+    </nav>
+    <div class= "wrapper">
+        <div class="side-content">
+            <header class= "about">
+                <h1>Guide Board</h1>
+                <p>
+                    All of the websites challanges and their guides can be found here.
+                    Each guide entry states the name of the game, the title of the challange,
+                    and a short description for the challange and it's guide
+                </p>
+            </header>
+            <article>
+                <h2>Upcoming Guide</h2>
+                <div class= "upcoming-guide-entry">
+                    <div class= "game-name"> 
+                        Cuphead
+                    </div>
+                    <div class= "guide-title">
+                        Beat all non-endgame bossfights under 2 minutes with perfect score
+                    </div>
+            </div>               
+            </article>
+        </div>
+
+        <main>
+            <div class= "guide-entry">
+                <div class= "game-name"> 
+                    Hollow Knight: SilkSong
+                </div>
+                <div class= "guide-title">
+                    <a href="guides/hollowknight-silksong-steel-heart-mode.html">
+                        SilkSong Steel Heart mode
+                    </a>
+                </div>
+                <div class= "guide-description">
+                    Beat the hardcore mode that unlocks after completing the game.
+                </div>
+            </div>
+            <div class= "guide-entry">
+                <div class= "game-name"> 
+                    Clair Obscure: Expedition 33
+                </div>
+                <div class= "guide-title">
+                    <a href="guides/expedition-33-simon-bossfight-x100-health.html">
+                        Simon fight x100 health
+                    </a>
+                </div>
+                <div class= "guide-description">
+                    Beat Simon with x100 health multiplier.
+                </div>
+            </div>
+            <div class= "guide-entry">
+                <div class= "game-name"> 
+                    Total War: Warhammer III
+                </div>
+                <div class= "guide-title">
+                    <a href="guides/total-war-warhammer-iii-turn-0-all-apocalypses-run.html">
+                        Immortal Empires turn 0 all endgame scenarios run
+                    </a>
+                </div>
+                <div class= "guide-description">
+                    Choose whatever faction, preferably one that isn't a crisis faction itself,
+                    and enable all endgame scenarios on max difficulty as soon as possible.
+                </div>
+            </div>
+        </main>
+    </div>
+    <hr>
+    <footer>
+    <p style="text-align: right; margin-right: 10px;">&copy;Bshr Suheil</p>
+    </footer>
+    <script type= "module" src= "search-navbar.js"></script>
+</body>
+</html>
